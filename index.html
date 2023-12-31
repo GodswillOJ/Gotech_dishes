@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/4c4cf0b696.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/cdn.jsdelivr.net_npm_swiper@10.1.0_swiper-bundle.min.css">
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=News+Cycle&family=Yrsa:wght@500&display=swap');
+  </style>
+</head>
+<body>
+    <header>
+        <div class="Gotech_ecom">Gotech_dish_menu</div>
+
+        <ul class="nav">
+            <li><a href="/user/login">Home</a></li>
+            <li class="has-submenu"><a id="nav_link" href="#"><i class="fa-solid fa-user"></i> Account</a>
+                <ul class="submenu">
+                    <li><a id="nav_link" href="/user/login">Login</a></li>
+                    <li><a id="nav_link" href="/user/register">Register</a></li>
+                    <li><a id="nav_link" href="/user/login">Contact</a></li>
+                </ul>
+            </li>
+            <li> <a id="nav_link" href="#"><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>                   
+            <li> <a id="nav_link" href="#"><i class="fa-solid fa-circle-info"></i> Q/E</a></li>                   
+          </ul>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <div id="site_img">
+            <div class="site_hint">
+                <h1>Dish Menu</h1>
+                <p>Order your local african dishes online. Dish menu got you covered.</p>
+                <a href=""><button class="button-default">See our menu</button></a>
+            </div>
+        </div>
+
+        <div class="swiper-container">
+            <div class="swip_commodity_wrap">
+                <div class="single_swip swiper">
+                    <div class="single_swip_wrap swiper-wrapper">
+                    
+                        <div class="single_commodity swiper-slide" style="background-image: url('images/more_menu.jpg');">
+                            <div class="single-data">
+                                <h1>Book a table</h1>
+                                <a href="/user/login"><button class="button-default">See More</button></a>
+                            </div>
+                        </div>
+
+                        <div class="single_commodity swiper-slide" style="background-image: url('images/all_menu.jpg');">
+                            <div class="single-data">
+                                <h1>Order a take out</h1>
+                                <a href="/user/login"><button class="button-default">See More</button></a>
+                            </div>
+                        </div>
+              
+                    </div>
+                                               <!-- If we need navigation buttons -->
+                    
+                                                 <!-- Swiper arrows -->
+                        <div  class="swiper-button-next">
+                        <i id="swip_arrow" class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                        <div  class="swiper-button-prev">
+                        <i id="swip_arrow" class="ri-arrow-left-s-line"></i>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+            
+
+        <div id="dish_information">
+            <div id="textContainer">
+                <a href=""><p id="text1">Contract deals</p></a>
+                <a href=""><p id="text2" class="hidden">Order a meal</p></a>
+            </div>
+        </div>
+
+        <div class="our_dishes">
+            <div id="dishes">
+                <img src="/images/pngwing.com.png" alt="">
+                <div class="dish_i">
+                    <h2>Popular Food</h2>
+                    <div class="dish_amt">
+                        <p>$51.99</p>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="dishes">
+                <img src="/images/pngwing.com (1).png" alt="">
+                <div class="dish_i">
+                    <h2>Popular Food</h2>
+                    <div class="dish_amt">
+                        <p>$51.99</p>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="dishes">
+                <img src="/images/pngwing1.com.png" alt="">
+                <div class="dish_i">
+                    <h2>Popular Food</h2>
+                    <div class="dish_amt">
+                        <p>$51.99</p>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="dishes">
+                <img src="/images/pngwing.com (3).png" alt="">
+                <div class="dish_i">
+                    <h2>Popular Food</h2>
+                    <div class="dish_amt">
+                        <p>$51.99</p>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="dishes">
+                <img src="/images/pngwing.com (4).png" alt="">
+                <div class="dish_i">
+                    <h2>Popular Food</h2>
+                    <div class="dish_amt">
+                        <p>$51.99</p>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="dishes">
+                <img src="/images/pngwing.com (5).png" alt="">
+                <div id="dish_i">
+                    <h2 is="pop">Popular Food</h2>
+                    <div class="dish_amt">
+                        <p>$51.99</p>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about_us">
+            <div class="our_menu">
+                <h1>Why Us?...</h1>
+            </div>
+            <div class="about_sec">
+                <img src="/images/pngwing2.com.png" alt="">
+                <div id="all_info">
+                    <h2>We offer the best treats and meals</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, provident.</p>
+                    <a href="">Gotech_fb</a>
+                    <a href="">Gotech_linkedin</a>
+                    <a href="">Gotech_IG</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/script/cdn.jsdelivr.net_npm_swiper@10.1.0_swiper-bundle.min.js"></script>
+    <script src="/script/myswip.js"></script>
+    <script src="/script/script.js"></script>
+    <script src="/script/delayedText.js"></script>
+</body>
+</html>

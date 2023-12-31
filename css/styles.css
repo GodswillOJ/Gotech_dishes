@@ -1,0 +1,529 @@
+html{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  top: 0;
+  padding: 15px;
+  width: calc(100% - 20px);
+  z-index: 99;
+  background-color: #fff;
+  /* padding: 0 10px 0 10px; */
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1); /* Adjust the values based on your preference */
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+.nav li{
+  padding: 10px;
+  margin: 0;
+}
+.nav li:hover {
+  background-color: none;
+  color: #134074;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #484646;
+  
+} 
+
+/* For menu-toggle */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background-color: #373434;
+  margin: 5px 0;
+  display: block;
+}
+
+/* Add styles for the sub-menu */
+.has-submenu:hover .submenu {
+  display: block;
+  padding-left: 0;
+  right: 0;
+  top: 3.5rem;
+  transition: display 6.3s ease-in-out;
+  left: 60%;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #fff; /* Sub-menu background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #09152c;
+  z-index: 1;
+  list-style: none;
+}
+
+.submenu li {
+  margin: 0;
+  padding: 0;
+  padding: 10px 10px 10px 10px;
+}
+.submenu li:hover {
+  background-color: #f7f8fa;
+}
+
+.submenu li a {
+  color: #09152c;
+  padding-left: 10px;
+}
+.submenu li a:hover {
+  color: #09152c;
+  transform: 0.5s;
+}
+
+  /* main styles */
+  main{
+    position: relative;
+    display: grid;
+  }
+  #site_img{
+    position: relative;
+    display: grid;
+    background-image: url('../images/african.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 20rem;
+    font-weight: bold;
+    top: 3%;
+    box-shadow: 4px 10px 6px rgba(0, 0, 0, 0.1);
+    margin: 8%;
+    padding: 0 25px 0 25px;
+    text-align: left;
+    border-radius: 5px;
+  }
+  .site_hint{
+    font-size: 26px;
+    font-family: 'News Cycle', sans-serif;
+  }
+  .site_hint .button-default{
+    display: inline-block;
+    padding: 3px 20px 3px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 2px 4px 8px rgb(74, 83, 87);
+  }
+  .button-default {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #fff;
+  }
+  /* Hover styles */
+  .button-default:hover {
+    background: linear-gradient(to right, #523312, #d67272);
+  }
+
+/* new */
+
+/* for commodity swip */
+.swiper{
+  width: 75%;
+  margin-bottom: 3rem;
+  border-radius: 5px;
+  box-shadow: 4px 10px 6px rgba(0, 0, 0, 0.2);
+}
+
+#swip_single{
+  padding-left: 0;
+  }
+  .single_cont{
+  display: grid; 
+  position: relative;
+    
+  }
+  .swip_commodity_wrap{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 30rem;
+  }
+  
+  /* for single categories */
+  /* Swiper class */
+  .single_swip .swiper-button-prev::after,
+  .single_swip .swiper-button-next::after{
+  content: ''; 
+  }
+  /* Swiper class */
+  .single_swip_wrap{
+  margin: 0;
+  }
+  .single_swip .swiper-button-next {
+  position: absolute;
+  right: 0;
+  }
+  .single_swip .swiper-button-prev {
+  position: absolute;
+  right: 0;
+  }
+
+  .single_commodity{
+  display: grid;
+  width: 100%;
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  }
+
+  .single_commodity .single-data{
+  position: relative;
+  display: grid;
+  text-align: center;
+  top: 0;
+  font-family: 'News Cycle', sans-serif;
+  background-color: rgba(53, 36, 162, 0.1);
+  margin: 0 10% 0 10%;
+  border-radius: 5px;
+  }
+  
+  .single_commodity .single-data:hover{
+    box-shadow: 2px 4px 8px rgb(217, 213, 213);
+  }
+  .single_commodity .single-data button{
+    color: white;
+    background: linear-gradient(to right, #f29d98, #e6c373);
+    border: none;
+    padding: 6px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 10em;
+    font-family: 'News Cycle', sans-serif;
+  }
+  .single_commodity .single-data button:hover{
+    background: linear-gradient(to right, #c9504a, #bf932d);
+  }
+
+  .single_commodity .single-data h1{
+    color: #fdfcfc;
+    font-size: 56px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  }
+  .single_commodity .single-data h1:hover{
+    color: #f7cbb5;
+  }
+
+  #swip_arrow{
+  border: 2px solid #0d0e10;
+  }
+  
+
+  /* animated text */
+  #dish_information{
+    position: relative;
+    display: grid;
+    margin-top: 28rem;
+    color: #272829;
+    background-color: none;
+  }
+
+
+  #textContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    padding-left: 10px;
+    font-family: 'Yrsa', serif;
+  }
+
+  #textContainer a{
+    color: #000;
+    font-family: 'News Cycle', sans-serif;
+  }
+
+  .hidden {
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+  }
+
+  /* Dishes section */
+
+  .our_dishes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    grid-row-gap: 50px; /* Adjust the gap between grid items as needed */
+    grid-column-gap: 20px; /* Adjust the gap between grid items as needed */
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+    margin: 0 15% 0 18%;
+  }
+
+
+  #dishes{
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #dishes img {
+    transition: transform 0.5s ease; /* Smooth transition for the rotation effect */
+  }
+  
+  #dishes:hover img {
+    transform: rotateY(360deg);
+  }
+  
+  #dishes img{
+    width: 60%;
+    height: 9rem;
+  }
+  .dish_amt button{
+    background: none;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #000;
+    font-family: 'Yrsa', serif;
+  }
+  .dish_amt button:hover{
+    background: linear-gradient(to right, #bf061e, #e14b2d);
+    border: none;
+    color: #000;
+    transition: transform 0.5s ease; 
+    box-shadow: 2px 3px 6px rgb(0, 0, 0, 0.2);
+  }
+
+  #about_us{
+    position: relative;
+    display: block;
+    margin: 5% 10% 5% 10%;
+    font-family: 'News Cycle', sans-serif;
+  }
+  #about_us img{
+    width: 60%;
+    height: 12rem;
+  }
+  .about_sec{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .our_menu h1{
+    text-align: center;
+    font-size: 26px;
+    font-style: italic;
+    color: #7a1f1b;
+    font-weight: bold;
+  }
+
+  #all_info {
+    padding-left: 1rem;
+  }
+
+  #all_info h2{
+    font-weight: bold;
+  }
+  #all_info a{
+    text-decoration: none;
+    padding: 0 10px;
+  }
+
+  @media screen and (max-width: 860px) {
+    
+  .our_dishes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+    margin: 0 15% 0 18%;
+  }
+  #dishes img{
+    width: 80%;
+    height: 9rem;
+  }
+  }
+
+  @media screen and (max-width: 760px) {
+    header{
+        margin: 0;
+      }
+      .nav {
+        display: none;
+        flex-direction: column;
+        text-align: start;
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding-left: 0;
+        background-color: #fff;
+      }
+      /* ... (previous styles) */
+      .home_nav_sec{
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .submenu {
+        width: 100%;
+        margin-top: 10px;
+        transition: 1s;
+      }
+      
+      .has-submenu:hover .submenu {
+       display: block;
+       padding-left: 0;
+       right: 0;
+       top: 40%;
+       transition: display 2.3s ease-in-out;
+       left: 0;
+      }
+      .nav.active {
+        display: block;
+      }
+      .nav li {
+        margin: 0;
+        padding: 5px;
+        padding-left: 3%;
+        width: 100%;
+        margin-right: 20px;
+        list-style: none;
+      }
+    
+      .nav li:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .menu-toggle {
+        display: flex;
+      }
+
+      #site_img{
+        top: 10%;
+        padding-top: 0;
+        padding: 0 20px 0 20px;
+      }
+
+      #site_img h1{
+        font-size: 35px;
+      }
+      #site_img p{
+        font-size: 18px;
+        font-weight: bold;
+      }
+      #site_img button{
+        font-size: 16px;
+        padding: 5px;
+      }
+    
+        /* animated text */
+      #dish_information{
+        position: relative;
+        display: grid;
+        margin-top: 25rem;
+        color: #272829;
+      }
+
+
+      /* swiper */
+
+      .swiper{
+        width: 80%;
+        height: 20rem;
+        top: 10%;
+      }
+
+      .about_sec{
+        position: relative;
+        display: block;
+        align-items: center;
+        justify-content: center;
+      }
+      /* Dishes section */
+      #about_us img{
+        width: 100%;
+        height: 12rem;
+        border-radius: 5px;
+      }
+    }
+
+    @media screen and (max-width: 580px) {
+      .single_commodity .single-data h1{
+        font-size: 40px;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      #site_img{
+        top: 15%;
+      }
+      .single_commodity .single-data h1{
+        font-size: 30px;
+      }
+      .single_commodity .single-data button{
+        font-size: 17px;
+        width: 80%;
+      }
+      .swiper{
+        top: 15%;
+      }
+
+      #dishes img{
+        width: 100%;
+        height: 9rem;
+      }
+      .our_dishes{
+        margin: 0 10% 0 10%;
+      }
+    }
+
+    
+    @media screen and (max-width: 282px) {
+      #site_img{
+        top: 15%;
+      }
+
+      .single_commodity .single-data {
+        margin: 0 10% 0 10%;
+      }
+
+      .single_commodity .single-data h1{
+        font-size: 24px;
+      }
+
+      .swiper{
+        top: 15%;
+      }
+    }
+
